@@ -1,0 +1,59 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.convert-container {
+  background: cadetblue;
+  border: 2px solid skyblue;
+  border-radius: 15px;
+}
+
+input[type="text"],
+select {
+  margin: 15px;
+  padding: 5px;
+  border-radius: 10px;
+  height: 45px;
+  font-size: 2rem;
+}
+
+input[type="text"] {
+  border: 2px solid rosybrown;
+  color: gray;
+}
+
+input[type="text"]:focus,
+select:focus {
+  color: black;
+  border: 2px solid rosybrown;
+  outline: none;
+  box-shadow: 0 0 0 3px steelblue;
+}
+
+select {
+  cursor: pointer;
+}
+
+option {
+  background: cadetblue;
+  color: rgb(149, 187, 202);
+}
