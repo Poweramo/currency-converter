@@ -41,12 +41,17 @@ input[type="text"] {
   color: gray;
 }
 
-input[type="text"]:focus,
+#from:focus,
 select:focus {
   color: black;
   border: 2px solid rosybrown;
   outline: none;
   box-shadow: 0 0 0 3px steelblue;
+}
+
+#to:focus {
+  border: 2px solid rosybrown;
+  outline: none;
 }
 
 select {

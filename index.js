@@ -41,8 +41,8 @@ countriesCodesFrom.addEventListener("change", (e) => (thefrom = e.target.value))
 countriesCodesTo.addEventListener("change", (e) => (theto = e.target.value));
 
 from.addEventListener("input", (e) => {
-  if (!e.target.value.match(/^[0-9]+(\.[0-9])?$/)) {
-    e.target.value = "";
+  if (e.target.value === "") {
+    to.value = "";
   } else if (thefrom && theto) {
     convertCurrency(e.target.value, thefrom, theto);
   }
